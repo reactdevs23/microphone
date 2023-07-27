@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { BiMicrophoneOff, BiMicrophone } from "react-icons/bi";
 import "./App.css";
-import Header from "./Header";
+import Header from "./component/Header/Header";
 
 function App() {
   const backendUrls = [
@@ -86,7 +86,7 @@ function App() {
       <div id="footer-links">
         <div className="footer-link-wrapper">
           <a href={TIPS_URL} target="_blank">
-            <img src="/tips.png" alt="#" /> Help &amp; Tips
+            ❓ Help &amp; Tips
           </a>
         </div>
         <div className="footer-link-wrapper">
@@ -94,16 +94,16 @@ function App() {
             data-tally-open="w4BWdb"
             data-tally-layout="modal"
             data-tally-width="900"
-            data-tally-emoji-text=""
+            data-tally-emoji-text="💌"
             data-tally-emoji-animation="wave"
             data-tally-auto-close="2000"
           >
-            <img src="/heart.png" alt="#" /> Share Feedback
+            💌 Share Feedback
           </a>
         </div>
         <div className="footer-link-wrapper">
           <a href="#" onClick={handleCalendlyClick}>
-            <img src="/calender.png" alt="#" /> Schedule a Call
+            🗓️ Schedule a Call
           </a>
         </div>
       </div>

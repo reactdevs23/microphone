@@ -16,84 +16,7 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
 }
-/* header css */
-.header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  width: 100%;
-  gap: 15px;
-}
-.header .headingContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .heading {
-  color: #000;
-  font-family: Inter;
-  font-size: 40px;
-  font-style: normal;
-  text-align: center;
-  font-weight: 600;
-  line-height: 20px; /* 50% */
-  margin: 0;
-  display: inline-block;
-  position: relative;
-}
 
-.header .heading::before {
-  content: "v 0.1";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translate(calc(100% + 8px), -50%);
-  color: #344054;
-  text-align: center;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 142.857%;
-  background: rgba(242, 244, 247, 1);
-  padding: 3px 8px;
-  border-radius: 16px;
-}
-
-.header .signinSignUp {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 10px;
-}
-.header .user {
-  color: #101828;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 142.857%;
-  margin: 0;
-}
-.header .signButton {
-  cursor: pointer;
-  outline: none;
-  color: #344054;
-  font-family: Inter;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 142.857%;
-  border-radius: 8px;
-  border: 1px solid #d0d5dd;
-  background: #fff;
-  padding: 6px 12px;
-
-  /* Shadow/xs */
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-}
-
-/* body css */
 main {
   display: flex;
   flex-direction: column;
@@ -237,8 +160,6 @@ main {
   cursor: pointer;
   color: #000;
   display: flex;
-  align-items: center;
-  gap: 8px;
   white-space: nowrap;
 }
 
@@ -254,14 +175,6 @@ div {
   font-family: Inter;
 }
 @media only screen and (max-width: 991px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .header .blank {
-    display: none;
-  }
   main {
     padding-top: 60px;
   }
@@ -269,20 +182,7 @@ div {
     margin: 0 70px;
   }
 }
-
 @media only screen and (max-width: 520px) {
-  .header {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .header .headingContainer {
-    justify-content: flex-start;
-    width: 100%;
-  }
-  .header .signinSignUp {
-    justify-content: flex-end;
-    width: 100%;
-  }
   main {
     padding-top: 40px;
   }
