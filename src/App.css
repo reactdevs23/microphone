@@ -241,7 +241,9 @@ main {
   gap: 8px;
   white-space: nowrap;
 }
-
+#footer-links a img {
+  width: 22px;
+}
 p,
 h1,
 h2,
