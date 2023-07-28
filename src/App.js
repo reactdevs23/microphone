@@ -16,7 +16,7 @@ function App() {
     { label: "[Developer Mode]", value: "ws://localhost:3000/conversation" },
   ];
   const [backendUrl, setBackendUrl] = useState(backendUrls[0]);
-  const [connected, setConnected] = useState(false);
+  const [connected, setConnected] = useState(true);
   const [showDropDown, setShowDropDown] = useState(false);
   const handleConnected = () => {
     setConnected((prev) => !prev);
