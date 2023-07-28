@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
       <div className="footer-link-wrapper">
         <a href="#" onClick={handleCalendlyClick}>
-          <img src="/calender.png" alt="#" /> Schedule a Call
+          <img src="/calender.png" alt="#" /> Schedule Call
         </a>
       </div>
     </div>
