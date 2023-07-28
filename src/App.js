@@ -16,7 +16,7 @@ function App() {
     { label: "[Developer Mode]", value: "ws://localhost:3000/conversation" },
   ];
   const [backendUrl, setBackendUrl] = useState(backendUrls[0]);
-  const [connected, setConnected] = useState(true);
+  const [connected, setConnected] = useState(false);
   const [showDropDown, setShowDropDown] = useState(false);
   const handleConnected = () => {
     setConnected((prev) => !prev);
@@ -32,12 +32,12 @@ function App() {
           <div className="processContainer">
             <p className="currentProcess process">{backendUrl.label}</p>
             {showDropDown ? (
-              <BsChevronDown
+              <BsChevronUp
                 className="arrow"
                 onClick={() => setShowDropDown((prev) => !prev)}
               />
             ) : (
-              <BsChevronUp
+              <BsChevronDown
                 className="arrow"
                 onClick={() => setShowDropDown((prev) => !prev)}
               />
