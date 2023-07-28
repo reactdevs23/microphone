@@ -109,6 +109,8 @@ main {
 }
 .processWrapper {
   width: 100%;
+  max-width: 311px;
+  margin: 0 auto;
 }
 
 .processContainer {
